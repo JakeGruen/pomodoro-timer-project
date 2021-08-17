@@ -15,5 +15,5 @@ function App() {
     </div>
   );
 }
-
+// App component returns the Pomodoro timer within a container, as well as a heading above the timer itself on the webpage.
 export default App;
