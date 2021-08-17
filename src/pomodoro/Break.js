@@ -1,7 +1,7 @@
 import React from "react"
 
 function Break({breakDuration, setBreakDuration, disableButton}){
-   
+   // function that increases/decreases break time in increments of 1 when corresponding buttons are clicked.
     function helper(num){
         if(num < 10){
           return  '0'
@@ -57,5 +57,5 @@ function Break({breakDuration, setBreakDuration, disableButton}){
             
         )
 }
-
+// ^ returns increase/decrease break buttons 
 export default Break;
