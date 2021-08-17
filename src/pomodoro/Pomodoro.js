@@ -6,7 +6,7 @@ import Focus from "./Focus";
 import Break from "./Break"
 import Session from "./Session"
 
-
+// This component utilizes the focus, break, and session components to build the pomodoro timer as a whole. useInterval is incorporated to play sound when timer expires.
 
 // These functions are defined outside of the component to insure they do not have access to state
 // and are, therefore more likely to be pure.
