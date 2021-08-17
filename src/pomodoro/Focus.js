@@ -1,15 +1,8 @@
 import React from "react";
-//import { minutesToDuration } from "../utils/duration/index"
+
 //Increases and Decreases Focus Time
 function Focus({focusDuration, setFocusDuration, disableButton}){
-  
-    // function handleIncreaseFocus(){
-    //     setFocus(Math.max(focus-5),5);
-    //   }
-    
-    //   function handleDecreaseFocus(){
-    //    setFocus(Math.min(focus +5),60)
-    //   }
+ 
 
     function helper(num){
       if(num < 10){
@@ -23,12 +16,13 @@ function Focus({focusDuration, setFocusDuration, disableButton}){
         const newValue = focusDuration+ 5
        setFocusDuration(newValue)
      }
-    
+    // ^ increases focus in increments of 5
       function handleDecreaseFocus(){
         if(focusDuration <= 5) return 
         const newValue = focusDuration - 5
         setFocusDuration(newValue)
       }
+ // ^ decreases focus in increments of 5
       return (
         <div className="input-group input-group-lg mb-2">
         <span className="input-group-text" data-testid="duration-focus">
@@ -60,5 +54,5 @@ function Focus({focusDuration, setFocusDuration, disableButton}){
       </div>
       );
 }
-
+// ^ returns focus increase/decrease buttons 
 export default Focus;
